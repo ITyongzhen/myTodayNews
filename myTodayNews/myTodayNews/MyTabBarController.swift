@@ -16,8 +16,12 @@ class MyTabBarController: UITabBarController {
         tabbar.tintColor = UIColor(red: 245/255.0, green: 93/255.0, blue: 90/255.0, alpha: 1)
         
         addChildViewControllers()
+        
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(tabBar.subviews)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
       
@@ -29,6 +33,10 @@ class MyTabBarController: UITabBarController {
          setChildViewController(VideoViewController(), title: "视频", imageName: "video_tabbar_32x32_", selectedImageName: "video_tabbar_press_night_32x32_")
          setChildViewController(HuoshanViewController(), title: "小视频", imageName: "huoshan_tabbar_32x32_", selectedImageName: "huoshan_tabbar_press_32x32_")
          setChildViewController(MineViewController(), title: "我的", imageName: "mine_tabbar_32x32_", selectedImageName: "mine_tabbar_press_32x32_")
+     
+        
+        // KVC
+        setValue(MyTabBar(), forKey: "tabBar")
     }
     
     // 初始化子控制器

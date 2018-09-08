@@ -20,6 +20,7 @@
 		2156F5A22143A7B90026E818 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5A12143A7B90026E818 /* VideoViewController.swift */; };
 		2156F5A42143A7C60026E818 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5A32143A7C60026E818 /* MineViewController.swift */; };
 		2156F5A62143A7D50026E818 /* HuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5A52143A7D50026E818 /* HuoshanViewController.swift */; };
+		2156F5A82143BC7D0026E818 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5A72143BC7D0026E818 /* MyTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		2156F5A12143A7B90026E818 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		2156F5A32143A7C60026E818 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		2156F5A52143A7D50026E818 /* HuoshanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuoshanViewController.swift; sourceTree = "<group>"; };
+		2156F5A72143BC7D0026E818 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				2156F5A12143A7B90026E818 /* VideoViewController.swift */,
 				2156F5A32143A7C60026E818 /* MineViewController.swift */,
 				2156F5A52143A7D50026E818 /* HuoshanViewController.swift */,
+				2156F5A72143BC7D0026E818 /* MyTabBar.swift */,
 			);
 			path = myTodayNews;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				2156F5A22143A7B90026E818 /* VideoViewController.swift in Sources */,
 				2156F5A62143A7D50026E818 /* HuoshanViewController.swift in Sources */,
 				2156F5A42143A7C60026E818 /* MineViewController.swift in Sources */,
+				2156F5A82143BC7D0026E818 /* MyTabBar.swift in Sources */,
 				2156F59E2143A4880026E818 /* MyNavigationController.swift in Sources */,
 				2156F56E2143A37E0026E818 /* AppDelegate.swift in Sources */,
 				2156F59C2143A4440026E818 /* MyTabBarController.swift in Sources */,
