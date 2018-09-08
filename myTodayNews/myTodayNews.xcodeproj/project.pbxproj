@@ -16,6 +16,10 @@
 		2156F58E2143A3800026E818 /* myTodayNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F58D2143A3800026E818 /* myTodayNewsUITests.swift */; };
 		2156F59C2143A4440026E818 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F59B2143A4440026E818 /* MyTabBarController.swift */; };
 		2156F59E2143A4880026E818 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F59D2143A4880026E818 /* MyNavigationController.swift */; };
+		2156F5A02143A7AA0026E818 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F59F2143A7AA0026E818 /* HomeViewController.swift */; };
+		2156F5A22143A7B90026E818 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5A12143A7B90026E818 /* VideoViewController.swift */; };
+		2156F5A42143A7C60026E818 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5A32143A7C60026E818 /* MineViewController.swift */; };
+		2156F5A62143A7D50026E818 /* HuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5A52143A7D50026E818 /* HuoshanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		2156F58F2143A3800026E818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2156F59B2143A4440026E818 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		2156F59D2143A4880026E818 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		2156F59F2143A7AA0026E818 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2156F5A12143A7B90026E818 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		2156F5A32143A7C60026E818 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		2156F5A52143A7D50026E818 /* HuoshanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuoshanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,10 @@
 				2156F5742143A3800026E818 /* Assets.xcassets */,
 				2156F5762143A3800026E818 /* LaunchScreen.storyboard */,
 				2156F5792143A3800026E818 /* Info.plist */,
+				2156F59F2143A7AA0026E818 /* HomeViewController.swift */,
+				2156F5A12143A7B90026E818 /* VideoViewController.swift */,
+				2156F5A32143A7C60026E818 /* MineViewController.swift */,
+				2156F5A52143A7D50026E818 /* HuoshanViewController.swift */,
 			);
 			path = myTodayNews;
 			sourceTree = "<group>";
@@ -262,7 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2156F5A02143A7AA0026E818 /* HomeViewController.swift in Sources */,
 				2156F5702143A37E0026E818 /* ViewController.swift in Sources */,
+				2156F5A22143A7B90026E818 /* VideoViewController.swift in Sources */,
+				2156F5A62143A7D50026E818 /* HuoshanViewController.swift in Sources */,
+				2156F5A42143A7C60026E818 /* MineViewController.swift in Sources */,
 				2156F59E2143A4880026E818 /* MyNavigationController.swift in Sources */,
 				2156F56E2143A37E0026E818 /* AppDelegate.swift in Sources */,
 				2156F59C2143A4440026E818 /* MyTabBarController.swift in Sources */,
@@ -439,7 +455,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BW29X768A;
 				INFOPLIST_FILE = myTodayNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +474,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BW29X768A;
 				INFOPLIST_FILE = myTodayNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
