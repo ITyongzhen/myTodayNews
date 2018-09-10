@@ -9,13 +9,18 @@
 import UIKit
 
 class MyTabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let tabbar = UITabBar.appearance()
         tabbar.tintColor = UIColor(red: 245/255.0, green: 93/255.0, blue: 90/255.0, alpha: 1)
         
+       
+        
         addChildViewControllers()
+
+        
+        
         
     }
     override func viewWillAppear(_ animated: Bool) {

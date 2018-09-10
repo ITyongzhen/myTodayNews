@@ -22,6 +22,8 @@
 		2156F5D02143C5360026E818 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5C72143C5360026E818 /* MyTabBar.swift */; };
 		2156F5D32144CD880026E818 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5D22144CD880026E818 /* Const.swift */; };
 		2156F5D52144FF610026E818 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5D42144FF610026E818 /* UIColor+Extension.swift */; };
+		2156F5D8214515230026E818 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5D7214515230026E818 /* NetworkTool.swift */; };
+		2156F5DA214520340026E818 /* MyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5D9214520340026E818 /* MyCellModel.swift */; };
 		CCE1300F1CD534FDAB478B6C /* Pods_myTodayNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDC960363FC2BCE08FE7331 /* Pods_myTodayNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		2156F5C72143C5360026E818 /* MyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		2156F5D22144CD880026E818 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		2156F5D42144FF610026E818 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		2156F5D7214515230026E818 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		2156F5D9214520340026E818 /* MyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellModel.swift; sourceTree = "<group>"; };
 		9697F36C27F78AA279942B62 /* Pods-myTodayNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTodayNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myTodayNews/Pods-myTodayNews.debug.xcconfig"; sourceTree = "<group>"; };
 		A25FE0ACD7CE9E3BC6366B7F /* Pods-myTodayNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTodayNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-myTodayNews/Pods-myTodayNews.release.xcconfig"; sourceTree = "<group>"; };
 		EA95D21A7E1CF905940644E6 /* Pods_myTodayNewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myTodayNewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,6 +272,7 @@
 		2156F5BC2143C5360026E818 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				2156F5D6214515010026E818 /* Tools */,
 				2156F5BD2143C5360026E818 /* Controller */,
 				2156F5BF2143C5360026E818 /* Model */,
 				2156F5C02143C5360026E818 /* View */,
@@ -286,6 +291,7 @@
 		2156F5BF2143C5360026E818 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2156F5D9214520340026E818 /* MyCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -338,6 +344,14 @@
 				2156F5D42144FF610026E818 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		2156F5D6214515010026E818 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2156F5D7214515230026E818 /* NetworkTool.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		5D8992FAB638FDF6782E1B5B /* Frameworks */ = {
@@ -571,12 +585,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2156F5D8214515230026E818 /* NetworkTool.swift in Sources */,
 				2156F5CB2143C5360026E818 /* AppDelegate.swift in Sources */,
 				2156F5C92143C5360026E818 /* VideoViewController.swift in Sources */,
 				2156F5C82143C5360026E818 /* HomeViewController.swift in Sources */,
 				2156F5D02143C5360026E818 /* MyTabBar.swift in Sources */,
 				2156F5CA2143C5360026E818 /* HuoshanViewController.swift in Sources */,
 				2156F5CF2143C5360026E818 /* MyNavigationController.swift in Sources */,
+				2156F5DA214520340026E818 /* MyCellModel.swift in Sources */,
 				2156F5CD2143C5360026E818 /* MineViewController.swift in Sources */,
 				2156F5CE2143C5360026E818 /* MyTabBarController.swift in Sources */,
 				2156F5D32144CD880026E818 /* Const.swift in Sources */,
