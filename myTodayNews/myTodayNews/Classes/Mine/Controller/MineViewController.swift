@@ -9,11 +9,25 @@
 import UIKit
 
 class MineViewController: UITableViewController {
-
+var sectionArrays = [[MyCellModel]]()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
         tableView.backgroundColor = UIColor.myBackgroudColor()
+        NetworkTool.loadMyCellData { (sections) in
+            // 返回数据没有 "我的关注" 先加上去
+            let string = "{\"text\":\"我的关注\",\"grey_text\":\"\"}"
+            let myConcern = MyCellModel.deserialize(from: string)
+            var myConcerns = [MyCellModel]()
+            myConcerns.append(myConcern!)
+            
+            self.sectionArrays.append(myConcerns)
+            self.sectionArrays += sections
+            self.tableView.reloadData()
+            
+            
+        }
+        NetworkTool.loadMyConcern()
     }
 
 }
@@ -31,17 +45,20 @@ extension MineViewController{
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return self.sectionArrays.count
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return self.sectionArrays[section].count
     }
 //    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //        return 10
 //    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.textLabel?.text = "测试的"
+        let section = self.sectionArrays[indexPath.section]
+        let myCellModel = section[indexPath.row]
+        
+        cell.textLabel?.text = myCellModel.text
         return cell
     }
     
