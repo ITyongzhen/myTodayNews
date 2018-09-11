@@ -24,6 +24,8 @@
 		2156F5D52144FF610026E818 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5D42144FF610026E818 /* UIColor+Extension.swift */; };
 		2156F5D8214515230026E818 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5D7214515230026E818 /* NetworkTool.swift */; };
 		2156F5DA214520340026E818 /* MyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5D9214520340026E818 /* MyCellModel.swift */; };
+		21D5CAE72147EB4400210932 /* myOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D5CAE52147EB4400210932 /* myOtherCell.swift */; };
+		21D5CAE82147EB4400210932 /* myOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D5CAE62147EB4400210932 /* myOtherCell.xib */; };
 		CCE1300F1CD534FDAB478B6C /* Pods_myTodayNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDC960363FC2BCE08FE7331 /* Pods_myTodayNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		2156F5D42144FF610026E818 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		2156F5D7214515230026E818 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		2156F5D9214520340026E818 /* MyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellModel.swift; sourceTree = "<group>"; };
+		21D5CAE52147EB4400210932 /* myOtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOtherCell.swift; sourceTree = "<group>"; };
+		21D5CAE62147EB4400210932 /* myOtherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myOtherCell.xib; sourceTree = "<group>"; };
 		9697F36C27F78AA279942B62 /* Pods-myTodayNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTodayNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myTodayNews/Pods-myTodayNews.debug.xcconfig"; sourceTree = "<group>"; };
 		A25FE0ACD7CE9E3BC6366B7F /* Pods-myTodayNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTodayNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-myTodayNews/Pods-myTodayNews.release.xcconfig"; sourceTree = "<group>"; };
 		EA95D21A7E1CF905940644E6 /* Pods_myTodayNewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myTodayNewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -299,6 +303,8 @@
 		2156F5C02143C5360026E818 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				21D5CAE52147EB4400210932 /* myOtherCell.swift */,
+				21D5CAE62147EB4400210932 /* myOtherCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -479,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21D5CAE82147EB4400210932 /* myOtherCell.xib in Resources */,
 				2156F5782143A3800026E818 /* LaunchScreen.storyboard in Resources */,
 				2156F5752143A3800026E818 /* Assets.xcassets in Resources */,
 				2156F5CC2143C5360026E818 /* Info.plist in Resources */,
@@ -587,6 +594,7 @@
 			files = (
 				2156F5D8214515230026E818 /* NetworkTool.swift in Sources */,
 				2156F5CB2143C5360026E818 /* AppDelegate.swift in Sources */,
+				21D5CAE72147EB4400210932 /* myOtherCell.swift in Sources */,
 				2156F5C92143C5360026E818 /* VideoViewController.swift in Sources */,
 				2156F5C82143C5360026E818 /* HomeViewController.swift in Sources */,
 				2156F5D02143C5360026E818 /* MyTabBar.swift in Sources */,

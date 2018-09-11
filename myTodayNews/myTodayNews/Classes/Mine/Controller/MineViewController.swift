@@ -14,6 +14,11 @@ var sectionArrays = [[MyCellModel]]()
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
         tableView.backgroundColor = UIColor.myBackgroudColor()
+//        UINib(nibName: String(myOtherCell.self), bundle: nil)
+        tableView.separatorStyle = .none
+        tableView.register(UINib(nibName: String(describing: myOtherCell.self), bundle: nil), forCellReuseIdentifier:String(describing: myOtherCell.self))
+        
+        
         NetworkTool.loadMyCellData { (sections) in
             // 返回数据没有 "我的关注" 先加上去
             let string = "{\"text\":\"我的关注\",\"grey_text\":\"\"}"
@@ -34,7 +39,7 @@ var sectionArrays = [[MyCellModel]]()
 extension MineViewController{
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10
+        return section == 1 ?0 :10
     }
     
    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -50,14 +55,21 @@ extension MineViewController{
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.sectionArrays[section].count
     }
-
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: myOtherCell.self)) as! myOtherCell
         let section = self.sectionArrays[indexPath.section]
         let myCellModel = section[indexPath.row]
         
-        cell.textLabel?.text = myCellModel.text
+        cell.leftLabel.text = myCellModel.text
+        cell.rightLabel.text = myCellModel.grey_text
         return cell
     }
+   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     
 }
