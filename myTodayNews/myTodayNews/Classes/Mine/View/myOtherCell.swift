@@ -8,7 +8,7 @@
 
 import UIKit
 
-class myOtherCell: UITableViewCell {
+class myOtherCell: UITableViewCell, RegistCellFromNib {
 
     @IBOutlet weak var leftLabel: UILabel!
     

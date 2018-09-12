@@ -10,59 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "myTodayNews/Classes/Mine/Controller/MineViewController.swift"
-            timestampString = "558445851.089442"
+            timestampString = "558450933.361761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "myTodayNews.MineViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "myTodayNews"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yinyongzhen/Documents/yyz/ios/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/myTodayNews/myTodayNews/myTodayNews/Classes/Mine/Controller/MineViewController.swift"
-                  timestampString = "558445897.9678659"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "2179">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;Swift.Array&lt;myTodayNews.MyCellModel&gt;&gt;) -&gt; () in myTodayNews.MineViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "myTodayNews"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yinyongzhen/Documents/yyz/ios/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/myTodayNews/myTodayNews/myTodayNews/Classes/Mine/Controller/MineViewController.swift"
-                  timestampString = "558445897.988587"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "42">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "myTodayNews/Classes/Mine/Controller/MineViewController.swift"
-            timestampString = "558445851.796321"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "myTodayNews/Classes/Mine/Controller/MineViewController.swift"
-            timestampString = "558445861.646297"
+            timestampString = "558450933.362236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
