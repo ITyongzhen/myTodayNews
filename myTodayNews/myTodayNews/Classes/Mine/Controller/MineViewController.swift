@@ -9,7 +9,11 @@
 import UIKit
 
 class MineViewController: UITableViewController {
-var sectionArrays = [[MyCellModel]]()
+    
+    // 存储我的关注数据
+    var concerns = [MyConcern]()
+    // 存储 cell的数据
+    var sectionArrays = [[MyCellModel]]()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
@@ -29,9 +33,14 @@ var sectionArrays = [[MyCellModel]]()
             self.sectionArrays += sections
             self.tableView.reloadData()
             
+            NetworkTool.loadMyConcern(completionHandler: { (myConcerns) in
+                self.concerns = myConcerns
+                let indexSet = IndexSet(integer: 0)
+                self.tableView.reloadSections(indexSet, with: .automatic)
+            })
             
         }
-        NetworkTool.loadMyConcern()
+        
     }
 
 }
@@ -55,6 +64,9 @@ extension MineViewController{
         return self.sectionArrays[section].count
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 && indexPath.row == 0 {
+            return (concerns.count == 0 || concerns.count == 1) ? 40 : 114
+        }
         return 44
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
