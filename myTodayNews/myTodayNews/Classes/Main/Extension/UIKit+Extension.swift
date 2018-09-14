@@ -52,7 +52,7 @@ extension UICollectionView{
     }
     
     /// 从缓存池中出队已经存在的 cell
-    func yz_deq<T: UICollectionViewCell>(indexPath: IndexPath) -> T where T: RegistCellFromNib {
+    func yz_dequeueReusableCell<T: UICollectionViewCell>(indexPath: IndexPath) -> T where T: RegistCellFromNib {
         return dequeueReusableCell(withReuseIdentifier: T.identifer, for: indexPath) as! T
     }
     

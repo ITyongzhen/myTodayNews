@@ -29,6 +29,8 @@
 		21D5CAE82147EB4400210932 /* myOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D5CAE62147EB4400210932 /* myOtherCell.xib */; };
 		21D5CAEB2147F79700210932 /* MyFirstSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D5CAE92147F79700210932 /* MyFirstSectionCell.swift */; };
 		21D5CAEC2147F79700210932 /* MyFirstSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D5CAEA2147F79700210932 /* MyFirstSectionCell.xib */; };
+		21DC632C214B59B20084F604 /* MyConcernCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC632A214B59B20084F604 /* MyConcernCell.swift */; };
+		21DC632D214B59B20084F604 /* MyConcernCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21DC632B214B59B20084F604 /* MyConcernCell.xib */; };
 		CCE1300F1CD534FDAB478B6C /* Pods_myTodayNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDC960363FC2BCE08FE7331 /* Pods_myTodayNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,8 @@
 		21D5CAE62147EB4400210932 /* myOtherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myOtherCell.xib; sourceTree = "<group>"; };
 		21D5CAE92147F79700210932 /* MyFirstSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstSectionCell.swift; sourceTree = "<group>"; };
 		21D5CAEA2147F79700210932 /* MyFirstSectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFirstSectionCell.xib; sourceTree = "<group>"; };
+		21DC632A214B59B20084F604 /* MyConcernCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcernCell.swift; sourceTree = "<group>"; };
+		21DC632B214B59B20084F604 /* MyConcernCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyConcernCell.xib; sourceTree = "<group>"; };
 		9697F36C27F78AA279942B62 /* Pods-myTodayNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTodayNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myTodayNews/Pods-myTodayNews.debug.xcconfig"; sourceTree = "<group>"; };
 		A25FE0ACD7CE9E3BC6366B7F /* Pods-myTodayNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTodayNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-myTodayNews/Pods-myTodayNews.release.xcconfig"; sourceTree = "<group>"; };
 		EA95D21A7E1CF905940644E6 /* Pods_myTodayNewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myTodayNewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -313,6 +317,8 @@
 				21D5CAE62147EB4400210932 /* myOtherCell.xib */,
 				21D5CAE92147F79700210932 /* MyFirstSectionCell.swift */,
 				21D5CAEA2147F79700210932 /* MyFirstSectionCell.xib */,
+				21DC632A214B59B20084F604 /* MyConcernCell.swift */,
+				21DC632B214B59B20084F604 /* MyConcernCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -498,6 +504,7 @@
 				21D5CAEC2147F79700210932 /* MyFirstSectionCell.xib in Resources */,
 				2156F5782143A3800026E818 /* LaunchScreen.storyboard in Resources */,
 				2156F5752143A3800026E818 /* Assets.xcassets in Resources */,
+				21DC632D214B59B20084F604 /* MyConcernCell.xib in Resources */,
 				2156F5CC2143C5360026E818 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +621,7 @@
 				2156F5CF2143C5360026E818 /* MyNavigationController.swift in Sources */,
 				2156F5DA214520340026E818 /* MyCellModel.swift in Sources */,
 				2156F5CD2143C5360026E818 /* MineViewController.swift in Sources */,
+				21DC632C214B59B20084F604 /* MyConcernCell.swift in Sources */,
 				2156F5CE2143C5360026E818 /* MyTabBarController.swift in Sources */,
 				2156F5D32144CD880026E818 /* Const.swift in Sources */,
 				2156F5D52144FF610026E818 /* UIColor+Extension.swift in Sources */,

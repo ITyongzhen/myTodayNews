@@ -18,9 +18,20 @@ class MyFirstSectionCell: UITableViewCell,RegistCellFromNib {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var myConcerns = [MyConcern](){
+        didSet{
+            collectionView.reloadData()
+        }
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        collectionView.collectionViewLayout = MyConcernFlowLayout()
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.yz_registerCell(cell: MyConcernCell.self)
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -30,3 +41,36 @@ class MyFirstSectionCell: UITableViewCell,RegistCellFromNib {
     }
     
 }
+extension MyFirstSectionCell: UICollectionViewDelegate, UICollectionViewDataSource{
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return myConcerns.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+         let cell = collectionView.yz_dequeueReusableCell(indexPath: indexPath) as MyConcernCell
+        
+        return cell
+        
+    }
+    
+}
+class MyConcernFlowLayout: UICollectionViewFlowLayout {
+    override func prepare() {
+        itemSize = CGSize(width: 58, height: 74)
+        minimumLineSpacing = 0
+        minimumInteritemSpacing = 0
+        sectionInset = UIEdgeInsetsMake(0, 0, 0, 0)
+        scrollDirection = .horizontal
+    }
+}
+
+
+
+
+
+
+
+
