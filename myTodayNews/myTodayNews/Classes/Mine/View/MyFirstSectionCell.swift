@@ -24,6 +24,19 @@ class MyFirstSectionCell: UITableViewCell,RegistCellFromNib {
         }
     }
     
+    var myCellModel: MyCellModel? {
+        didSet{
+            leftLabel.text = myCellModel?.text
+            rightLabel.text = myCellModel?.grey_text
+        }
+    }
+    
+    var myConcern: MyConcern?{
+        didSet{
+            
+        }
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -51,7 +64,7 @@ extension MyFirstSectionCell: UICollectionViewDelegate, UICollectionViewDataSour
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
          let cell = collectionView.yz_dequeueReusableCell(indexPath: indexPath) as MyConcernCell
-        
+        cell.myconcern = myConcerns[indexPath.item]
         return cell
         
     }

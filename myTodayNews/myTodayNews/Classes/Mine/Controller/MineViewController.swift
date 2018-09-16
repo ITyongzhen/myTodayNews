@@ -76,9 +76,20 @@ extension MineViewController{
             
 //            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MyFirstSectionCell.self)) as! MyFirstSectionCell
             let section = self.sectionArrays[indexPath.section]
-            let myCellModel = section[indexPath.row]
-            cell.leftLabel.text = myCellModel.text
-            cell.rightLabel.text = myCellModel.grey_text
+    
+            cell.myCellModel = section[indexPath.row]
+            if concerns.count == 0 || concerns.count == 1{
+                cell.collectionView.isHidden = true
+            }
+            
+            if concerns.count == 1 {
+                cell.myConcern = concerns[0]
+            }
+            
+            if concerns.count > 1{
+                cell.myConcerns = concerns
+            }
+            
             return cell
         }
         let cell = tableView.yz_dequeueReusableCell(indexPath: indexPath) as myOtherCell
