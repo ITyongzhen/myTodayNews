@@ -23,6 +23,14 @@ extension RegistCellFromNib{
     
 }
 
+protocol NibLoadable {}
+
+extension NibLoadable {
+    static func loadViewFromNib() -> Self {
+        return Bundle.main.loadNibNamed("\(self)", owner: nil, options: nil)?.last as! Self
+    }
+}
+
 extension UITableView{
     /// 注册 cell 的方法
     func yz_registerCell<T: UITableViewCell>(cell: T.Type) where T: RegistCellFromNib {

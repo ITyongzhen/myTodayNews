@@ -25,6 +25,8 @@
 		2156F5D8214515230026E818 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5D7214515230026E818 /* NetworkTool.swift */; };
 		2156F5DA214520340026E818 /* MyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156F5D9214520340026E818 /* MyCellModel.swift */; };
 		217CD1632149403C00FF2FB3 /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD1622149403C00FF2FB3 /* UIKit+Extension.swift */; };
+		219EF2F8214E504D00F34989 /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 219EF2F6214E504C00F34989 /* NoLoginHeaderView.xib */; };
+		219EF2F9214E504D00F34989 /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF2F7214E504C00F34989 /* NoLoginHeaderView.swift */; };
 		21D5CAE72147EB4400210932 /* myOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D5CAE52147EB4400210932 /* myOtherCell.swift */; };
 		21D5CAE82147EB4400210932 /* myOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D5CAE62147EB4400210932 /* myOtherCell.xib */; };
 		21D5CAEB2147F79700210932 /* MyFirstSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D5CAE92147F79700210932 /* MyFirstSectionCell.swift */; };
@@ -77,6 +79,8 @@
 		2156F5D7214515230026E818 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		2156F5D9214520340026E818 /* MyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellModel.swift; sourceTree = "<group>"; };
 		217CD1622149403C00FF2FB3 /* UIKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
+		219EF2F6214E504C00F34989 /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
+		219EF2F7214E504C00F34989 /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
 		21D5CAE52147EB4400210932 /* myOtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOtherCell.swift; sourceTree = "<group>"; };
 		21D5CAE62147EB4400210932 /* myOtherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myOtherCell.xib; sourceTree = "<group>"; };
 		21D5CAE92147F79700210932 /* MyFirstSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstSectionCell.swift; sourceTree = "<group>"; };
@@ -319,6 +323,8 @@
 				21D5CAEA2147F79700210932 /* MyFirstSectionCell.xib */,
 				21DC632A214B59B20084F604 /* MyConcernCell.swift */,
 				21DC632B214B59B20084F604 /* MyConcernCell.xib */,
+				219EF2F7214E504C00F34989 /* NoLoginHeaderView.swift */,
+				219EF2F6214E504C00F34989 /* NoLoginHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -506,6 +512,7 @@
 				2156F5752143A3800026E818 /* Assets.xcassets in Resources */,
 				21DC632D214B59B20084F604 /* MyConcernCell.xib in Resources */,
 				2156F5CC2143C5360026E818 /* Info.plist in Resources */,
+				219EF2F8214E504D00F34989 /* NoLoginHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +628,7 @@
 				2156F5CF2143C5360026E818 /* MyNavigationController.swift in Sources */,
 				2156F5DA214520340026E818 /* MyCellModel.swift in Sources */,
 				2156F5CD2143C5360026E818 /* MineViewController.swift in Sources */,
+				219EF2F9214E504D00F34989 /* NoLoginHeaderView.swift in Sources */,
 				21DC632C214B59B20084F604 /* MyConcernCell.swift in Sources */,
 				2156F5CE2143C5360026E818 /* MyTabBarController.swift in Sources */,
 				2156F5D32144CD880026E818 /* Const.swift in Sources */,

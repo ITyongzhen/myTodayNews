@@ -17,6 +17,7 @@ class MineViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
+        tableView.tableHeaderView = headerView
         tableView.backgroundColor = UIColor.myBackgroudColor()
         tableView.separatorStyle = .none
         tableView.yz_registerCell(cell: myOtherCell.self)
@@ -42,6 +43,9 @@ class MineViewController: UITableViewController {
         }
         
     }
+    
+    /// 懒加载 头部
+    private lazy var headerView = NoLoginHeaderView.loadViewFromNib()
 
 }
 extension MineViewController{
@@ -103,5 +107,17 @@ extension MineViewController{
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        if offsetY < 0 {
+            let totalOffset = kMyHeaderViewHeight + abs(offsetY)
+            print("totalOffset =" + "\(totalOffset)")
+            let f = totalOffset / kMyHeaderViewHeight
+            print("1111f =" + "\(f)")
+            headerView.bgImageView.frame = CGRect(x: -kScreenWidth * (f - 1) * 0.5, y: offsetY, width: kScreenWidth * f, height: totalOffset)
+        }
+        
+    }
     
 }
