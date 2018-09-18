@@ -18,6 +18,10 @@ class MyFirstSectionCell: UITableViewCell,RegistCellFromNib {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var topView: UIView!
+    
+    @IBOutlet weak var separatorView: UIView!
+    
     var myConcerns = [MyConcern](){
         didSet{
             collectionView.reloadData()
@@ -45,6 +49,16 @@ class MyFirstSectionCell: UITableViewCell,RegistCellFromNib {
         collectionView.dataSource = self
         collectionView.yz_registerCell(cell: MyConcernCell.self)
         
+        
+        /// 设置主题
+        leftLabel.theme_textColor = "colors.black"
+        rightLabel.theme_textColor = "colors.cellRightTextColor"
+        rightImage.theme_image = "images.cellRightArrow"
+        separatorView.theme_backgroundColor = "colors.separatorViewColor"
+        theme_backgroundColor = "colors.cellBackgroundColor"
+        topView.theme_backgroundColor = "colors.cellBackgroundColor"
+        collectionView.theme_backgroundColor = "colors.cellBackgroundColor"
+    
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

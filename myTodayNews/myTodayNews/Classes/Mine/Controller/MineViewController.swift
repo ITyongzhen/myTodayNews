@@ -22,7 +22,7 @@ class MineViewController: UITableViewController {
         tableView.separatorStyle = .none
         tableView.yz_registerCell(cell: myOtherCell.self)
         tableView.yz_registerCell(cell: MyFirstSectionCell.self)
-//        tableView.register(UINib(nibName: String(describing: myOtherCell.self), bundle: nil), forCellReuseIdentifier:String(describing: myOtherCell.self))
+   //    tableView.register(UINib(nibName: String(describing: myOtherCell.self), bundle: nil), forCellReuseIdentifier:String(describing: myOtherCell.self))
         NetworkTool.loadMyCellData { (sections) in
             // 返回数据没有 "我的关注" 先加上去
             let string = "{\"text\":\"我的关注\",\"grey_text\":\"\"}"

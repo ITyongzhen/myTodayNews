@@ -27,6 +27,9 @@
 		217CD1632149403C00FF2FB3 /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD1622149403C00FF2FB3 /* UIKit+Extension.swift */; };
 		219EF2F8214E504D00F34989 /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 219EF2F6214E504C00F34989 /* NoLoginHeaderView.xib */; };
 		219EF2F9214E504D00F34989 /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF2F7214E504C00F34989 /* NoLoginHeaderView.swift */; };
+		219EF2FD214E6E3300F34989 /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 219EF2FB214E6E3300F34989 /* default_theme.plist */; };
+		219EF2FE214E6E3300F34989 /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 219EF2FC214E6E3300F34989 /* night_theme.plist */; };
+		219EF300214E6FC000F34989 /* MyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EF2FF214E6FC000F34989 /* MyTheme.swift */; };
 		21D5CAE72147EB4400210932 /* myOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D5CAE52147EB4400210932 /* myOtherCell.swift */; };
 		21D5CAE82147EB4400210932 /* myOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D5CAE62147EB4400210932 /* myOtherCell.xib */; };
 		21D5CAEB2147F79700210932 /* MyFirstSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D5CAE92147F79700210932 /* MyFirstSectionCell.swift */; };
@@ -81,6 +84,9 @@
 		217CD1622149403C00FF2FB3 /* UIKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
 		219EF2F6214E504C00F34989 /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
 		219EF2F7214E504C00F34989 /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
+		219EF2FB214E6E3300F34989 /* default_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_theme.plist; sourceTree = "<group>"; };
+		219EF2FC214E6E3300F34989 /* night_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night_theme.plist; sourceTree = "<group>"; };
+		219EF2FF214E6FC000F34989 /* MyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTheme.swift; sourceTree = "<group>"; };
 		21D5CAE52147EB4400210932 /* myOtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOtherCell.swift; sourceTree = "<group>"; };
 		21D5CAE62147EB4400210932 /* myOtherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myOtherCell.xib; sourceTree = "<group>"; };
 		21D5CAE92147F79700210932 /* MyFirstSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstSectionCell.swift; sourceTree = "<group>"; };
@@ -280,6 +286,7 @@
 		2156F5B92143C5360026E818 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				219EF2FA214E6E3300F34989 /* Theme */,
 				2156F5BA2143C5360026E818 /* AppDelegate.swift */,
 				2156F5BB2143C5360026E818 /* Info.plist */,
 				2156F5D22144CD880026E818 /* Const.swift */,
@@ -377,8 +384,18 @@
 			isa = PBXGroup;
 			children = (
 				2156F5D7214515230026E818 /* NetworkTool.swift */,
+				219EF2FF214E6FC000F34989 /* MyTheme.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		219EF2FA214E6E3300F34989 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				219EF2FB214E6E3300F34989 /* default_theme.plist */,
+				219EF2FC214E6E3300F34989 /* night_theme.plist */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		5D8992FAB638FDF6782E1B5B /* Frameworks */ = {
@@ -510,7 +527,9 @@
 				21D5CAEC2147F79700210932 /* MyFirstSectionCell.xib in Resources */,
 				2156F5782143A3800026E818 /* LaunchScreen.storyboard in Resources */,
 				2156F5752143A3800026E818 /* Assets.xcassets in Resources */,
+				219EF2FD214E6E3300F34989 /* default_theme.plist in Resources */,
 				21DC632D214B59B20084F604 /* MyConcernCell.xib in Resources */,
+				219EF2FE214E6E3300F34989 /* night_theme.plist in Resources */,
 				2156F5CC2143C5360026E818 /* Info.plist in Resources */,
 				219EF2F8214E504D00F34989 /* NoLoginHeaderView.xib in Resources */,
 			);
@@ -631,6 +650,7 @@
 				219EF2F9214E504D00F34989 /* NoLoginHeaderView.swift in Sources */,
 				21DC632C214B59B20084F604 /* MyConcernCell.swift in Sources */,
 				2156F5CE2143C5360026E818 /* MyTabBarController.swift in Sources */,
+				219EF300214E6FC000F34989 /* MyTheme.swift in Sources */,
 				2156F5D32144CD880026E818 /* Const.swift in Sources */,
 				2156F5D52144FF610026E818 /* UIColor+Extension.swift in Sources */,
 			);

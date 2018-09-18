@@ -32,10 +32,10 @@ class MyConcernCell: UICollectionViewCell, RegistCellFromNib {
         super.awakeFromNib()
         // Initialization code
         tipsButton.layer.borderWidth = 1
-//        tipsButton.layer.theme_borderColor = "colors.cellBackgroundColor"
-//        theme_backgroundColor = "colors.cellBackgroundColor"
-//        tipsButton.theme_backgroundColor = "colors.globalRedColor"
-//        nameLabel.theme_textColor = "colors.black"
+        tipsButton.layer.theme_borderColor = "colors.cellBackgroundColor"
+        theme_backgroundColor = "colors.cellBackgroundColor"
+        tipsButton.theme_backgroundColor = "colors.globalRedColor"
+        nameLabel.theme_textColor = "colors.black"
     }
 
 

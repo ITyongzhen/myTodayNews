@@ -19,3 +19,4 @@ let device_id: Int = 6096495334
 let iid: Int = 5034850950
 
 let kMyHeaderViewHeight: CGFloat = 280
+let isNight = "isNight"
