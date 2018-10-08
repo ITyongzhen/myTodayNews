@@ -41,7 +41,8 @@ class MyTabBarController: UITabBarController {
      
         
         // KVC
-        setValue(MyTabBar(), forKey: "tabBar")
+        let bar = MyTabBar(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 50))
+        setValue(bar, forKey: "tabBar")
     }
     
     // 初始化子控制器

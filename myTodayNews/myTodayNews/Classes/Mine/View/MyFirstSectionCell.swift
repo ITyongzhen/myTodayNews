@@ -49,6 +49,7 @@ class MyFirstSectionCell: UITableViewCell,RegistCellFromNib {
         collectionView.dataSource = self
         collectionView.yz_registerCell(cell: MyConcernCell.self)
         
+        print("1111111111111")
         
         /// 设置主题
         leftLabel.theme_textColor = "colors.black"
